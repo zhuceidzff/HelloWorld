@@ -7,6 +7,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -31,6 +32,13 @@ public class MyActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+        Button button = (Button)findViewById(R.id.activity_my_button);
+        button.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Log.d("zff","命令显示");
+            }
+        }
+        );
     }
 
     @Override
@@ -54,8 +62,6 @@ public class MyActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-    public void saveName(View view){
-        Intent intent = new Intent(this,Display);
-    }
+
 }
 

@@ -17,7 +17,7 @@
         android:hint="@string/edit_message"
         android:maxLines="2"/>
     <Button
-        android:id="@+id/button"
+        android:id="@+id/activity_my_button"
         android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_height="wrap_content"
