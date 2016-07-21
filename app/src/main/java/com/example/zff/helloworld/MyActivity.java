@@ -32,13 +32,7 @@ public class MyActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-        Button button = (Button)findViewById(R.id.activity_my_button);
-        button.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                Log.d("zff","命令显示");
-            }
-        }
-        );
+
     }
 
     @Override
