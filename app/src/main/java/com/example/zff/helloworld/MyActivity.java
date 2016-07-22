@@ -23,7 +23,15 @@ public class MyActivity extends AppCompatActivity {
         setContentView(R.layout.activity_my);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        Button button = (Button) findViewById(R.id.activity_my_button);
+        final EditText editText = (EditText) findViewById(R.id.edit_message);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("zff","日志打印");
+                editText.setText("请输入你的姓名");
+            }
+        });
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
